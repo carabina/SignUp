@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlertMessage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsJ-2D-hx5">
+                                <rect key="frame" x="52" y="134" width="271" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="31z-lE-Khb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xyu-Cv-bfd">
+                                <rect key="frame" x="52" y="233" width="271" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="47q-gz-aA7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Again" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="98O-az-O9n">
+                                <rect key="frame" x="52" y="291" width="271" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="TN1-8h-NoT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEX-h2-YZE">
+                                <rect key="frame" x="93" y="365" width="178" height="53"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="31"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Shh-xQ-r6t"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NM1-Bg-edU">
+                                <rect key="frame" x="93" y="50" width="178" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="FyH-0i-RdP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="person.2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iAt-gA-K4p">
+                                <rect key="frame" x="158" y="87" width="49" height="46"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48.666666666666671" id="1td-57-7rn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Created By Dimtris Theodoropoulos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3K-eL-i3d">
+                                <rect key="frame" x="69" y="756" width="236" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NM1-Bg-edU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="33j-wg-cLh"/>
+                            <constraint firstItem="NM1-Bg-edU" firstAttribute="leading" secondItem="TEX-h2-YZE" secondAttribute="leading" id="7VM-b1-gSc"/>
+                            <constraint firstItem="NM1-Bg-edU" firstAttribute="centerX" secondItem="iAt-gA-K4p" secondAttribute="centerX" id="AQl-EA-jTf"/>
+                            <constraint firstItem="hsJ-2D-hx5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B4b-tQ-xEc"/>
+                            <constraint firstItem="hsJ-2D-hx5" firstAttribute="leading" secondItem="xyu-Cv-bfd" secondAttribute="leading" id="D1e-XI-e85"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NM1-Bg-edU" secondAttribute="trailing" constant="104" id="E3W-pc-im8"/>
+                            <constraint firstItem="98O-az-O9n" firstAttribute="top" secondItem="xyu-Cv-bfd" secondAttribute="bottom" constant="24" id="N1M-tk-EjR"/>
+                            <constraint firstItem="xyu-Cv-bfd" firstAttribute="top" secondItem="hsJ-2D-hx5" secondAttribute="bottom" constant="65" id="PN4-5s-WQn"/>
+                            <constraint firstItem="iAt-gA-K4p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="QcL-ue-DpO"/>
+                            <constraint firstItem="hsJ-2D-hx5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="SNe-X4-0hg"/>
+                            <constraint firstItem="xyu-Cv-bfd" firstAttribute="trailing" secondItem="98O-az-O9n" secondAttribute="trailing" id="WrJ-6b-lPP"/>
+                            <constraint firstItem="NM1-Bg-edU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="eHw-sg-0aw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TEX-h2-YZE" secondAttribute="bottom" constant="360" id="gbq-j5-71U"/>
+                            <constraint firstItem="NM1-Bg-edU" firstAttribute="trailing" secondItem="TEX-h2-YZE" secondAttribute="trailing" id="inz-R0-Btg"/>
+                            <constraint firstItem="xyu-Cv-bfd" firstAttribute="leading" secondItem="98O-az-O9n" secondAttribute="leading" id="jNA-rk-ieX"/>
+                            <constraint firstItem="TEX-h2-YZE" firstAttribute="top" secondItem="98O-az-O9n" secondAttribute="bottom" constant="40" id="jbx-QE-ozR"/>
+                            <constraint firstItem="hsJ-2D-hx5" firstAttribute="trailing" secondItem="xyu-Cv-bfd" secondAttribute="trailing" id="pkT-lr-GJx"/>
+                            <constraint firstItem="hsJ-2D-hx5" firstAttribute="top" secondItem="iAt-gA-K4p" secondAttribute="bottom" id="uIc-gZ-2dd"/>
+                            <constraint firstItem="iAt-gA-K4p" firstAttribute="top" secondItem="NM1-Bg-edU" secondAttribute="bottom" constant="6.3333333333333286" id="vEj-jC-jG0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="password2Text" destination="98O-az-O9n" id="98Z-vt-Pvs"/>
+                        <outlet property="passwordText" destination="xyu-Cv-bfd" id="YBt-Gw-Sx9"/>
+                        <outlet property="userNameText" destination="hsJ-2D-hx5" id="8Qf-QM-6TN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.399999999999999" y="101.23152709359606"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.2" catalog="system" width="64" height="40"/>
+    </resources>
+</document>
